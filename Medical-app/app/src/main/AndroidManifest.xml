@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.applerao.medicine" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".utils.AppContext">
+
+        <!--START TABS -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/my_classes" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FaqsActivity"
+            android:label="@string/my_faqs" >
+        </activity>
+
+        <activity
+            android:name=".FindsActivity"
+            android:label="@string/my_finds" >
+        </activity>
+
+        <activity
+            android:name=".PersonalActivity"
+            android:label="@string/my_personal" >
+        </activity>
+
+        <!--END TABS -->
+
+        <!--START BUTTONS OF 首页 -->
+
+        <activity
+            android:name=".TrialActivity"
+            android:label="@string/trial_class" >
+        </activity>
+
+        <activity
+            android:name=".ClassActivity"
+            android:label="@string/class_center" >
+        </activity>
+        <!--START BUTTONS OF 首页 -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/my_login" >
+        </activity>
+
+        <activity
+            android:name=".CareerActivity"
+            android:label="@string/career_classes" >
+        </activity>
+    </application>
+
+</manifest>
